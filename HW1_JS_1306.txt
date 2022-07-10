@@ -1,0 +1,141 @@
+ 1. —оздать переменную Уitem_1Ф
+ 2. ѕрисвоить переменной item_1 цифру 5.
+ 3. ¬ывести в консоль item_1.
+ 4. —оздать переменную Уitem_2Ф
+ 5. ѕрисвоить переменной item_2 цифру 3.
+ 6. ¬ывести в консоль item_2.
+ 7. —оздать переменную Уitem_3Ф
+ 8. ѕрисвоить переменной item_3 сложение item_1 и item_2.
+ 9. ¬ывести в консоль item_3.
+ 10. —оздать переменную Уitem_4Ф
+ 11. ѕрисвоить переменной item_4 строку УYolochkaФ
+ 12. ¬ывести в консоль item_4.
+ 13. ¬ывести в консоль сложение item_3 и item_4.
+ 14. ¬ывести в консоль умножение item_3 и item_4.
+ 15. —оздать переменную Уitem_5Ф
+ 16. ѕрисвоить переменной item_5 переменную item_3
+ 17. —оздать переменную item_6.
+ 18. —оздать переменную item_6_type
+ 19. ѕрисвоить переменной item_6 значение 15
+ 20. ѕрисвоить переменной item_6_type тип переменной item_6
+ 21. ¬ывести в консоль тип данных item_6 в виде ЧЧ  Уitem_6 == Ф  item_6,  Уitem_6_type == Ф  item_6_type ЧЧ  
+ 22. —оздать переменную item_7 и в ней преобразовать item_6 в String.
+ 23. —оздать переменную item_7_type
+ 24. ѕрисвоить переменной item_7_type тип переменной item_7
+ 25. ¬ывести в консоль тип данных item_7 в виде ЧЧ  Уitem_7 == Ф  item_7,  Уitem_7_type == Ф  item_7_type ЧЧ  
+ 26. —оздать переменную Уage_1Ф и присвоить ей значение 10
+ 27. —оздать переменную Уage_2Ф и присвоить ей значение 18
+ 28. —оздать переменную Уage_3Ф и присвоить ей значение 60
+ 29. —оздать if в котором будите провер€ть значение переменной age_1
+ 30. ≈сли age_1 < age_2, вывести в консоль УYou donТt have access cause your age is Ф + age_1 + У ItТs less then Ф
+ 31. ≈сли age_1 >=  age_2 и age_1 <  age_3, вывести в консоль УWelcome  !Ф
+ 32. ≈сли age_1  > age_3, вывести в консоль УKeep calm and look Culture channelФ.
+ 33. »наче выводите УTechnical workФ.
+
+HW_1* 
+«адани€ с разным количеством звездочек:)
+1*:
+ѕреобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+ѕример: const checkAge = function(age) {
+¬аши преобразовани€
+}
+¬ывести в консоль результат работы функции с возрастами 17, 18, 61
+
+let age_2 = 18
+let age_3 = 60
+
+/*const checkage = function(age) {
+if(age < age_2){
+    console.log("You don't have access cause your age is", age)
+} else if (age >= age_2 && age < age_3){
+    console.log("Welcome !")
+} else if (age > age_3){
+    console.log("Keep calm and look Culture channel")
+} else{
+    console.log("Technical work")
+}
+}
+checkage(17)
+checkage(18)
+checkage(61)
+
+2*:
+ѕреобразовать задание 1* таким образом, чтобы первым делом в функции провер€лс€ тип данных. » если он не Number - 
+кидалась ошибка.
+
+let age_2 = 18
+let age_3 = 60
+const checkage = function(age) {
+    if(typeof age == 'Number') {
+        
+     if (age < age_2) {
+        console.log("You don't have access cause your age is", age)
+    } else if (age >= age_2 && age < age_3) {
+        console.log("Welcome !")
+    } else if (age > age_3) {
+        console.log("Keep calm and look Culture channel")
+    } else {
+        console.log("Technical work")
+    }
+} else {
+    console.log("Error")}
+}
+   
+
+    checkage('gdfgf')
+
+3**:
+ѕреобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит “ќЋ№ ќ ÷»‘–ј) пропускалось, 
+преобразовыва€сь в number
+
+let age_2 = 18
+let age_3 = 60
+
+const checkage = function(age) {
+     age = Number(age)
+     console.log(age)
+if(typeof age == 'Number') {
+    if (age < age_2) {
+        console.log("You don't have access cause your age is", age)
+    } else if (age >= age_2 && age < age_3) {
+        console.log("Welcome !")
+    } else if (age > age_3) {
+        console.log("Keep calm and look Culture channel")
+    } else {
+        console.log("Technical work")
+    }
+} else console.log("Error")
+}
+
+  
+checkage(61)
+checkage(17)
+checkage('2')
+checkage('aaa')
+
+4***:
+ѕреобразовать задание 3* таким образом, чтобы возраст вводитс€ использу€ функцию prompt в прив€занной верстке
+
+let age_2 = 18;
+let age_3 = 60;
+
+const checkage = function(age) {
+    age = Number(age)
+    alert(age)
+if(typeof age == 'number') {
+    if (age < age_2){
+        alert("You don't have access cause your age is", age)
+    } else if(age >= age_2 && age < age_3){
+        alert("Welcome !")  
+    }else if(age > age_3){
+        alert("Keep calm and look Culture channel")
+    }else {
+        console.log("Technical work")
+    }
+} else {
+    console.log("Error")
+}
+}
+
+let a = prompt('Enter your age')
+checkage(a)
